@@ -1,0 +1,34 @@
+#logLevel: info
+
+#rtsp: true
+
+#rtmp: false
+#hls: false
+
+#paths:
+  #all:
+   #publishUser: ""   # no authentication
+   #publishPass: ""
+   
+   
+#logLevel: info
+
+#rtsp: true
+#rtmp: false
+#hls: false
+#webrtc: false
+
+#paths:
+  #mystream:
+    #publishUser: ""
+    #publishPass: ""
+logLevel: info
+rtsp: true
+rtmp: false
+hls: false
+webrtc: false
+
+paths:
+  mystream:
+    source: publisher
+

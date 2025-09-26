@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  rtsp-server:
+    image: bluenviron/mediamtx
+    container_name: mediamtx
+    ports:
+      - "8554:8554"
+    volumes:
+      - ./mediamtx.yml:/mediamtx.yml:ro
+
+
