@@ -1,4 +1,6 @@
-#set up the rtsp audio stream live inferencing.
+set up the rtsp audio stream live inferencing.
+
+
 1. cd rtsp-audio
 2. run docker compose up -d -----> the rtsp server is up now push the audio file
 3. ffmpeg -re -stream_loop -1 -i test-audio/test.wav \-c:a aac -b:a 128k -ar 44100 -ac 2 -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/mystream
